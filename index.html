@@ -3,57 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="./js/script.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>E-Groceries</title>
 </head>
 <body>
-    <header class="navigation">
-        <div class="page-title">E-Grocery</div>
-        <div class="nav-opt">
-            <a href="/" class="nav-item">Home</a>
-            <a href="/" class="nav-item">Our Package</a>
-            <a href="/" class="nav-item">Call Us</a>
+    <header class="header-wrapper" id="nav-bar">
+        <div class="header-logo">
+            E-Grocery
+        </div>
+        <div class="header-menu">
+            <a href="#main-cont" class="menu">
+                Home
+            </a>
+            <a href="#our-packages" class="menu">
+                Our Package
+            </a>
+            <a href="#closing" class="menu">
+                Call Us
+            </a>
         </div>
     </header>
     <main>
         <div class="content-title">
-            <div>
-                <h1>Top Rated E-Groceries Shop in Indonesia</h1>
-            </div>
-            <div>
-                <span>Everyday with best ingridients</span>
-            </div>
+            <h1 class="title1">Top Rated E-Groceries Shop in</h1>
+            <h1 class="title2">Indonesia</h1>
+            <h3>Everyday with the best ingredients</h3>
         </div>
-        <div id="content" class="content">
-            <div id="content-left" class="content-left">
-                <div id="content-image" class="content-image">
-                    <img src="./asset/placeholder-2.webp" alt="slider">
-                    <span>Fresh Everyday</span>
+        <div class="main-content" id="main-cont">
+            <div class="left-content">
+                <div class="slider-img">
+                    <img class="image active" src="./assets/gemma-stpjHJGqZyw-unsplash.jpg">
+                    <img class="image" src="./assets/kurt-cotoaga-4pF3eQulCQw-unsplash.jpg">
+                    <img class="image" src="./assets/nrd-D6Tu_L3chLE-unsplash.jpg">
+                </div>
+                <p class="comments"><i>"I buy fresh fruit and veggies here everyday!"</i></p>
+                <div class="buyer">
+                    <div>
+                        <img class="buyer-img" src="./assets/priscilla-du-preez-AtpT0kck-18-unsplash.jpg">
+                    </div>
+                    <div>
+                        <b class="buyer-name">Florence Hughes</b>
+                        <p class="buyer-occupation"><i>Stay at Home Mom, 28</i></p>
+                    </div>
                 </div>
             </div>
-            <div id="content-right" class="content-right">
-                <form class="content-form">
-                    <label for="name">Your Name</label>
-                    <input type="text" name="name" placeholder="First and Last Name">
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" placeholder="example@email.com">
-                    <label for="interest">What are you interested in?</label>
-                    <select name="interest">
-                        <option>Indonesian Cuisine</option>
-                        <option>Indonesian Cuisine</option>
-                        <option>Indonesian Cuisine</option>
-                    </select>
-                    <button type="submit" class="button">Send</button>
-                </form>
+            <div class="right-content">
+                <div class="form-wrapper">
+                    <form class="content-form">
+                        <h3>Contact Us</h3>
+                        <p class="contact-text">Our sales team will contact you within 24 hours</p>
+                        <label for="name">
+                            Name
+                        </label>
+                        <input id="name" type="text" placeholder="First and Last name">
+                        <p id="name-error" class="error-message"></p>
+                        <label>
+                            Email
+                        </label>
+                        <input id="email" type="email" placeholder="example@email.com">
+                        <p id="email-error" class="error-message"></p>
+                        <label>
+                            Interest
+                        </label>
+                        <select id="interest">
+                            <option disabled selected hidden value="" >Choose your interest</option>
+                            <option value="Indonesian Cuisine">Indonesian Cuisine</option>
+                            <option value="Italian Cuisine">Italian Cuisine</option>
+                            <option value="Japanese Cuisine">Japanese Cuisine</option>
+                            <option value="Recommend Me!">Recommend Me!</option>
+                        </select>
+                        <p id="interest-error" class="error-message"></p>
+                        <button id="button">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
+        <div class="this-space-text">
+            <p><b>Use this space to provide users with more information about your offer.</b></p>
+            <p><b>Consider it a follow-up to your headline and explain the benefit of your</b></p>
+            <p><b>service or product</b></p>
+        </div>
+        <div class="list-wrapper">
+            <div>
+                <div class="circle">1</div>
+            </div>
+            <div class="list-text">
+                <span>Your first feature, written in the form of a</span>
+                <p>benefit statement</p>
+            </div>
+        </div>
+        <div class="list-wrapper">
+            <div>
+                <div class="circle">2</div>
+            </div>
+            <div class="list-text">
+                <span>Your first feature, written in the form of a</span>
+                <p>benefit statement</p>
+            </div>
+        </div>
+        <div class="list-wrapper">
+            <div>
+                <div class="circle">3</div>
+            </div>
+            <div class="list-text">
+                <span>Your first feature, written in the form of a</span>
+                <p>benefit statement</p>
+            </div>
+        </div>
+        <div class="our-package" id="our-packages">
+            <h1>Our Package</h1>
+        </div>
+        <div class="package-wrapper">
+            <div class="packages">
+                <div class="list-wrapper">
+                    <div>
+                        <img class="package-img" src="./assets/vegetables.png">
+                    </div>
+                    <div class="package-text">
+                        <b>Fresh Vegetables</b>
+                        <p>Fresh vegetables sourced directly from the best farms.</p>
+                    </div>
+                </div>
+                <div class="list-wrapper">
+                    <div>
+                        <img class="package-img" src="./assets/apple.png">
+                    </div>
+                    <div class="package-text">
+                        <b>Fresh Fruit</b>
+                        <p>Fruit of the highest quality, sourced locally or imported, at attractive prices.</p>
+                    </div>
+                </div>
+                <div class="list-wrapper">
+                    <div>
+                        <img class="package-img" src="./assets/fast-delivery.png">
+                    </div>
+                    <div class="package-text">
+                        <b>Instant Delivery</b>
+                        <p>Sent instantly by couriers trained to maintain your shopping needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="packages">
+                <div class="list-wrapper">
+                    <div>
+                        <img class="package-img" src="./assets/crate.png">
+                    </div>
+                    <div class="package-text">
+                        <b>Kitchen Ingredient</b>
+                        <p>Complete kitchen spices for all your cooking needs.</p>
+                    </div>
+                </div>
+                <div class="list-wrapper">
+                    <div>
+                        <img class="package-img" src="./assets/pans.png">
+                    </div>
+                    <div class="package-text">
+                        <b>Kitchen Set</b>
+                        <p>A wide range of cooking utensils to assist you in the kitchen.</p>
+                    </div>
+                </div>
+                <div class="list-wrapper">
+                    <div>
+                        <img class="package-img" src="./assets/boxes.png">
+                    </div>
+                    <div class="package-text">
+                        <b>Bundling Set</b>
+                        <p>Uncertain about what to cook? We offer packages to simplify your kitchen creations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="closing" id="closing">
+            <h1>Your Closing Argument Headline</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus incidunt eius fugiat nesciunt repellendus eum ullam assumenda tempora</p>
+            <p>eveniet quos illum quis, earum a. Ratione facere numquam molestias tempore eius.</p>
+            <button id="notbutton">CALL TO ACTION</button>
+        </div>      
     </main>
-    <div id="our-products" class="our-products">
-        <div class="circle" class="circle">1</div>
-    </div>
     <footer>
-
+        <div class="footer">
+            <img src="https://pkk.uma.ac.id/wp-content/uploads/2023/06/revo.png">
+            <div class="footer-2">
+                <a href="#nav-bar">Terms of Service</a>
+                <a href="#nav-bar">Privacy Policy</a>
+            </div>
+            <br>
+            <span>&copy; E-Groceries Andiko</span>
+        </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
